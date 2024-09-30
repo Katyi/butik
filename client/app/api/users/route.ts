@@ -19,7 +19,7 @@ export const POST = async (req: NextRequest) => {
 
     return NextResponse.json(user, { status: 200 });
   } catch (err) {
-    // console.log('[users_GET]', err);
+    console.log('[users_GET]', err);
     return new NextResponse('Internal Server Error', { status: 500 });
   }
 };

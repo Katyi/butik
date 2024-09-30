@@ -16,7 +16,7 @@ export default async function Home() {
   const user = await getUser(userId);
 
   return (
-    <>
+    <div>
       <Image
         src="/banner.png"
         alt="banner"
@@ -27,7 +27,7 @@ export default async function Home() {
       />
       <Collections />
       <ProductList />
-    </>
+    </div>
   );
 }
 
