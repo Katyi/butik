@@ -41,7 +41,7 @@ export const POST = async (req: NextRequest) => {
 
     return NextResponse.json(user, { status: 200 });
   } catch (err) {
-    console.log('[wishlist_POST]', err);
+    // console.log('[wishlist_POST]', err);
     return new NextResponse('Internal Server Error', { status: 500 });
   }
 };
