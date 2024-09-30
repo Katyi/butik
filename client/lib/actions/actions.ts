@@ -5,7 +5,7 @@ export const getCollections = async () => {
   return await collections.json();
 };
 
-export const getUser = async (userId: string) => {
+export const getUsers = async (userId: string) => {
   const res = await fetch(`${process.env.ECOMMERCE_STORE_URL}/api/users`, {
     method: 'POST',
     body: JSON.stringify({

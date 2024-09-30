@@ -4,7 +4,7 @@ import { redirect } from 'next/navigation';
 
 import Collections from '@/components/Collections';
 import ProductList from '@/components/ProductList';
-import { getUser } from '@/lib/actions/actions';
+import { getUsers } from '@/lib/actions/actions';
 
 export default async function Home() {
   const { userId } = auth();
@@ -13,7 +13,7 @@ export default async function Home() {
     return redirect('/sign-in');
   }
 
-  const user = await getUser(userId);
+  const user = await getUsers(userId);
 
   return (
     <div>
