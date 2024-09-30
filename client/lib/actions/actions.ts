@@ -6,7 +6,7 @@ export const getCollections = async () => {
 };
 
 export const getUser = async (userId: string) => {
-  const res = await fetch('https://butik-orpin.vercel.app/api/users', {
+  const res = await fetch(`${process.env.ECOMMERCE_STORE_URL}/api/users`, {
     method: 'POST',
     body: JSON.stringify({
       userId: userId,
