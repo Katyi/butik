@@ -25,7 +25,7 @@ const HeartFavorite = ({ product, updateSignedInUser }: HeartFavoriteProps) => {
       setIsLiked(data.wishlist.includes(product._id));
       setLoading(false);
     } catch (err) {
-      // console.log('[users_GET]', err);
+      console.log('[users_GET]', err);
     }
   };
 
@@ -55,7 +55,7 @@ const HeartFavorite = ({ product, updateSignedInUser }: HeartFavoriteProps) => {
         updateSignedInUser && updateSignedInUser(updatedUser);
       }
     } catch (err) {
-      // console.log('[wishlist]', err);
+      console.log('[wishlist]', err);
     }
   };
 
