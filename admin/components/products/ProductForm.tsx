@@ -30,7 +30,7 @@ const formSchema = z.object({
   description: z.string().min(2).max(500).trim(),
   media: z.array(z.string()),
   category: z.string().min(1, { message: 'Field is required' }),
-  collections: z.array(z.string()).min(1, { message: 'Field is required' }),
+  collections: z.array(z.string()),
   tags: z.array(z.string()).min(1, { message: 'Field is required' }),
   sizes: z.array(z.string()),
   colors: z.array(z.string()).min(1, { message: 'Field is required' }),
