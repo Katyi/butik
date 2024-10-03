@@ -1,0 +1,11 @@
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_dm9jYWwtbG9ic3Rlci03Ni5jbGVyay5hY2NvdW50cy5kZXYk
+CLERK_SECRET_KEY=sk_test_2gVohs3jmQhNAvXsUoVwSeM9YLWsUcF3krJrqTmwV4
+
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+
+NEXT_PUBLIC_API_URL=https://butik-admin.vercel.app/api
+
+ECOMMERCE_STORE_URL=https://butik-orpin.vercel.app
+
+MONGODB_URL=mongodb+srv://Alex:zZySr7R02EX0rXQG@cluster0.kk3bz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
