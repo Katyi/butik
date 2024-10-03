@@ -7,8 +7,8 @@ import { ruRU } from '@clerk/localizations';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Borcella - Admin Auth',
-  description: "Admin dashboard to manage Borcella's data",
+  title: 'Butik - Admin Auth',
+  description: "Admin dashboard to manage Butik's data",
 };
 
 export default function RootLayout({

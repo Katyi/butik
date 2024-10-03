@@ -7,8 +7,8 @@ import { ruRU } from '@clerk/localizations';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Borcella - Store Auth',
-  description: 'Next.js 14 Borcella Ecommerce store',
+  title: 'Butik - Store Auth',
+  description: 'Next.js 14 Butik Ecommerce store',
 };
 
 export default function RootLayout({
