@@ -13,10 +13,14 @@ const Orders = () => {
 
   const getOrders = async () => {
     try {
-      const res = await fetch(`/api/orders`);
-      const data = await res.json();
-      setOrders(data);
-      setLoading(false);
+      await fetch(`/api/orders`)
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          setOrders(data);
+          setLoading(false);
+        });
     } catch (err) {
       console.log('[orders_GET', err);
     }
