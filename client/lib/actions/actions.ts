@@ -15,13 +15,14 @@ export const getCollections = async () => {
 };
 
 export const getUsers = async (userId: string) => {
-  const res = await fetch(`${process.env.ECOMMERCE_STORE_URL}/api/users`, {
+  await fetch(`${process.env.ECOMMERCE_STORE_URL}/api/users`, {
     method: 'POST',
     body: JSON.stringify({
       userId: userId,
     }),
+  }).then(function (response) {
+    return response.json();
   });
-  return await res.json();
 };
 
 export const getCollectionDetails = async (collectionId: string) => {
