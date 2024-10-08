@@ -8,6 +8,13 @@ const config: Config = {
   ],
   theme: {
     fontSize: {
+      'heading-bold': [
+        '72px',
+        {
+          lineHeight: '100%',
+          fontWeight: '700',
+        },
+      ],
       'heading1-bold': [
         '50px',
         {

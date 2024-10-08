@@ -1,10 +1,10 @@
 import { auth } from '@clerk/nextjs/server';
-import Image from 'next/image';
 import { redirect } from 'next/navigation';
 
 import Collections from '@/components/Collections';
 import ProductList from '@/components/ProductList';
 import { getUsers } from '@/lib/actions/actions';
+import Banner from '@/components/Banner';
 
 export default async function Home() {
   const { userId } = auth();
@@ -17,14 +17,7 @@ export default async function Home() {
 
   return (
     <div>
-      <Image
-        src="/banner.png"
-        alt="banner"
-        width={2000}
-        height={1000}
-        className="w-screen"
-        priority={true}
-      />
+      <Banner />
       <Collections />
       <ProductList />
     </div>

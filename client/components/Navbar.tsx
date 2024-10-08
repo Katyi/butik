@@ -19,7 +19,7 @@ const Navbar = () => {
   const [query, setQuery] = useState('');
 
   return (
-    <div className="sticky top-0 z-10 py-2 px-10 flex gap-2 justify-between items-center bg-white max-sm:px-2 shadow-lg">
+    <div className="sticky top-0 z-50 h-16 py-2 px-10 flex gap-2 justify-between items-center bg-white max-sm:px-2 shadow-lg">
       <Link href="/">
         <Image
           src="/logo.png"
@@ -91,24 +91,31 @@ const Navbar = () => {
 
         {dropdownMenu && (
           <div className="w-[180px] absolute top-12 right-5 flex flex-col gap-4 p-3 rounded-lg border bg-white text-base-bold lg:hidden">
-            <Link href="/" className="hover:text-blue-1">
+            <Link
+              href="/"
+              className="hover:text-blue-1"
+              onClick={() => setDropdownMenu(!dropdownMenu)}
+            >
               Главная
             </Link>
             <Link
               href={user ? '/wishlist' : '/sign-in'}
               className="hover:text-blue-1"
+              onClick={() => setDropdownMenu(!dropdownMenu)}
             >
               Избранное
             </Link>
             <Link
               href={user ? '/orders' : '/sign-in'}
               className="hover:text-blue-1"
+              onClick={() => setDropdownMenu(!dropdownMenu)}
             >
               Заказы
             </Link>
             <Link
               href="/cart"
               className="flex items-center gap-3 border rounded-lg px-2 py-1 hover:bg-black hover:text-white"
+              onClick={() => setDropdownMenu(!dropdownMenu)}
             >
               <ShoppingCart />
               <p className="text-base-bold">
