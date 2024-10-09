@@ -37,7 +37,7 @@ const Products = () => {
     <Loader />
   ) : (
     <div className="px-10 py-5">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-4 xs:flex-row xs:items-center xs:justify-between">
         <p className="text-heading2-bold">Товары</p>
         <Button
           className="bg-blue-1 text-white"

@@ -73,6 +73,9 @@ const config: Config = {
       ],
     },
     extend: {
+      screens: {
+        xs: '500px',
+      },
       colors: {
         'white-1': '#F8F8F8',
         'grey-1': '#616161',
